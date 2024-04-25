@@ -19,9 +19,6 @@
       "jsx": true
     }
   },
-<<<<<<< Updated upstream
-  "plugins": ["prettier", "import", "@typescript-eslint", "sort-export-all"],
-=======
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
@@ -29,7 +26,6 @@
     }
   ],
   "plugins": ["prettier", "import", "@typescript-eslint", "sort-export-all", "tailwindcss"],
->>>>>>> Stashed changes
   "rules": {
     "prettier/prettier": [
       "error",
@@ -115,12 +111,8 @@
     "@typescript-eslint/await-thenable": "error",
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "@typescript-eslint/no-inferrable-types": "error",
-<<<<<<< Updated upstream
-    "sort-export-all/sort-export-all": "error"
-=======
     "sort-export-all/sort-export-all": "error",
     "tailwindcss/classnames-order": "error",
     "tailwindcss/no-unnecessary-arbitrary-value": "error"
->>>>>>> Stashed changes
   }
 }
