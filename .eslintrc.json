@@ -19,7 +19,13 @@
       "jsx": true
     }
   },
-  "plugins": ["prettier", "import", "@typescript-eslint", "sort-export-all", "eslint-plugin-tailwindcss"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "parser": "@typescript-eslint/parser"
+    }
+  ],
+  "plugins": ["prettier", "import", "@typescript-eslint", "sort-export-all", "tailwindcss"],
   "rules": {
     "prettier/prettier": [
       "error",
@@ -106,7 +112,7 @@
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "@typescript-eslint/no-inferrable-types": "error",
     "sort-export-all/sort-export-all": "error",
-    "eslint-plugin-tailwindcss/classnames-order": "error",
-    "eslint-plugin-tailwincss/no-unnecessary-arbitrary-value": "error",
+    "tailwindcss/classnames-order": "error",
+    "tailwindcss/no-unnecessary-arbitrary-value": "error"
   }
 }
