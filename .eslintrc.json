@@ -25,7 +25,7 @@
       "parser": "@typescript-eslint/parser"
     }
   ],
-  "plugins": ["prettier", "import", "@typescript-eslint", "sort-export-all", "tailwindcss"],
+  "plugins": ["prettier", "import", "@typescript-eslint", "sort-export-all", "tailwindcss", "react"],
   "rules": {
     "prettier/prettier": [
       "error",
@@ -114,5 +114,10 @@
     "sort-export-all/sort-export-all": "error",
     "tailwindcss/classnames-order": "error",
     "tailwindcss/no-unnecessary-arbitrary-value": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
