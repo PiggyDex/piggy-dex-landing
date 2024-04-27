@@ -5,14 +5,14 @@ import { type Socials } from "@/types";
 
 import { SocialIcon } from "./socials-icons";
 
-interface Props {
+type SocialButtonProps = {
   className?: string;
   SocialName: Socials;
   link?: string;
   iconSize?: number;
-}
+};
 
-export const SocialButton: FC<Props> = ({
+export const SocialButton: FC<SocialButtonProps> = ({
   className,
   link,
   SocialName,
@@ -22,10 +22,12 @@ export const SocialButton: FC<Props> = ({
     <a
       title="Social"
       href={link}
+      target="_blank"
       className={cn(
         "flex items-center justify-center w-16 h-12 px-4 py-[6px] rounded-xl bg-white/15",
         className,
       )}
+      rel="noreferrer"
     >
       <SocialIcon SocialName={SocialName} width={iconSize} height={iconSize} />
     </a>

@@ -1,3 +1,5 @@
+"use client";
+
 import TelegramIcon from "@mui/icons-material/Telegram";
 import XIcon from "@mui/icons-material/X";
 import Image from "next/image";
