@@ -16,10 +16,30 @@ export const Earn: FC = () => {
         </span>
       </div>
       <div className="flex items-start gap-6 self-stretch ">
-        <PoolInfoCard />
-        <PoolInfoCard />
-        <PoolInfoCard />
-        <PoolInfoCard />
+        <PoolInfoCard
+          pool={{
+            token1: "cfx",
+            token2: "usdc",
+          }}
+        />
+        <PoolInfoCard
+          pool={{
+            token1: "cfx",
+            token2: "weth",
+          }}
+        />
+        <PoolInfoCard
+          pool={{
+            token1: "cfx",
+            token2: "wbtc",
+          }}
+        />
+        <PoolInfoCard
+          pool={{
+            token1: "cfx",
+            token2: "usdt",
+          }}
+        />
       </div>
     </div>
   );
