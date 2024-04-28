@@ -16,7 +16,7 @@ export const PoolInfoCard: FC<PoolInfoCardProps> = (props) => {
   return (
     <div
       className={cn(
-        "flex flex-[1_0_0] flex-col items-center gap-8 rounded-2xl border border-t border-border bg-gradient-to-b from-[#f5e2e91a] to-[#8f84881a] p-8",
+        "flex flex-[1_0_0] flex-col items-center gap-8 rounded-2xl border-t border-border bg-gradient-to-b from-[#f5e2e91a] to-[#8f84881a] p-8",
         className,
       )}
     >
