@@ -58,7 +58,12 @@ export const HorizontalScrollingBanner: FC<HorizontalScrollBannerProps> = ({
         className,
       )}
     >
-      <div className={cn("flex flex-row group-hover:animate-pause", animate)}>
+      <div
+        className={cn(
+          "will-change-transform flex flex-row group-hover:animate-pause",
+          animate,
+        )}
+      >
         <ImageMap images={images} />
       </div>
     </div>

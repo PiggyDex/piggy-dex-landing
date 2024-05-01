@@ -58,7 +58,7 @@ export const PoolInfoCard: FC<PoolInfoCardProps> = (props) => {
           Explore
         </span>
         <Image
-          className="group-hover:animate-[shake_1s_linear_infinite]"
+          className="will-change-transform group-hover:animate-[shake_1s_linear_infinite]"
           src="/arrow-right-pink.svg"
           alt=""
           width={20}
