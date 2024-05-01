@@ -1,3 +1,4 @@
+export * from "./awarded-by";
 export * from "./banner";
 export * from "./earn";
 export * from "./footer";

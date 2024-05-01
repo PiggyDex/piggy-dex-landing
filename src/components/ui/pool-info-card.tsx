@@ -50,14 +50,20 @@ export const PoolInfoCard: FC<PoolInfoCardProps> = (props) => {
         </div>
       </div>
       <button
-        className="flex flex-row items-start gap-[10px] rounded-full border border-border p-2 pl-3 hover:bg-accent/50"
+        className="group flex flex-row items-start gap-[10px] rounded-full border border-border p-2 pl-3 hover:bg-accent/50"
         title="Explore"
         type="button"
       >
         <span className="text-base font-normal not-italic leading-[120%] text-primary">
           Explore
         </span>
-        <Image src="/arrow-right-pink.svg" alt="" width={20} height={20} />
+        <Image
+          className="group-hover:animate-[shake_1s_linear_infinite]"
+          src="/arrow-right-pink.svg"
+          alt=""
+          width={20}
+          height={20}
+        />
       </button>
     </div>
   );

@@ -6,7 +6,7 @@ export const Earn: FC = () => {
   return (
     <div className="container flex flex-col items-center gap-12">
       <div className="flex flex-col items-center gap-4">
-        <span className="text-center text-6xl font-bold not-italic leading-[120%] text-primary">
+        <span className="text-center text-6xl font-bold not-italic leading-[120%] text-textLight">
           Earn
         </span>
         <span className="text-center text-base font-normal not-italic leading-[120%] text-white/85">
