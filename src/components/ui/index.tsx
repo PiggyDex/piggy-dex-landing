@@ -1,3 +1,4 @@
+export * from "./horizontal-scrolling-banner";
 export * from "./launch-app-button";
 export * from "./pool-info-card";
 export * from "./responsive-image";

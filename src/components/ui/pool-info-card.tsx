@@ -4,15 +4,15 @@ import { type FC } from "react";
 import { cn } from "@/lib";
 
 type PoolInfoCardProps = {
-  pool?: {
-    token1?: string;
-    token2?: string;
+  pool: {
+    token1: string;
+    token2: string;
   };
   className?: string;
 };
 
 export const PoolInfoCard: FC<PoolInfoCardProps> = (props) => {
-  const { className } = props;
+  const { className, pool } = props;
   return (
     <div
       className={cn(
@@ -24,14 +24,14 @@ export const PoolInfoCard: FC<PoolInfoCardProps> = (props) => {
         <div className="flex items-start">
           <Image
             className="z-[1]"
-            src="/token-cfx.svg"
+            src={`/token/${pool.token1}.svg`}
             alt=""
             width={48}
             height={48}
           />
           <Image
             className="z-[2] -ml-1"
-            src="/token-usdc.svg"
+            src={`/token/${pool.token2}.svg`}
             alt=""
             width={48}
             height={48}
@@ -40,7 +40,7 @@ export const PoolInfoCard: FC<PoolInfoCardProps> = (props) => {
       </div>
       <div className="flex flex-col items-center gap-2 self-stretch">
         <span className="leading-[120%]; self-stretch text-center text-2xl font-bold not-italic text-white">
-          Pool CFX/wUSDC
+          Pool {pool.token1.toUpperCase()}/{pool.token2.toUpperCase()}
         </span>
         <div className="flex h-10 content-center items-start gap-2 px-8 py-1">
           <span className="flex-none text-center text-2xl font-normal not-italic leading-[120%] ">
@@ -50,14 +50,20 @@ export const PoolInfoCard: FC<PoolInfoCardProps> = (props) => {
         </div>
       </div>
       <button
-        className="flex flex-row items-start gap-[10px] rounded-full border border-border p-2 pl-3 hover:bg-accent/50"
+        className="group flex flex-row items-start gap-[10px] rounded-full border border-border p-2 pl-3 hover:bg-accent/50"
         title="Explore"
         type="button"
       >
         <span className="text-base font-normal not-italic leading-[120%] text-primary">
           Explore
         </span>
-        <Image src="/arrow-right-pink.svg" alt="" width={20} height={20} />
+        <Image
+          className="group-hover:animate-[shake_1s_linear_infinite]"
+          src="/arrow-right-pink.svg"
+          alt=""
+          width={20}
+          height={20}
+        />
       </button>
     </div>
   );

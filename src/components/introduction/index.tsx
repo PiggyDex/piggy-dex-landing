@@ -14,7 +14,7 @@ export const Introduction: FC = () => {
       />
       <div className="m-[100px] inline-flex flex-col items-start gap-8">
         <div className="flex flex-col items-start gap-4">
-          <span className="text-center text-6xl font-bold not-italic leading-[120%] text-primary">
+          <span className="text-center text-6xl font-bold not-italic leading-[120%] text-textLight">
             Piggy DEX
           </span>
           <span className="text-base font-normal not-italic leading-[120%] text-white/85">

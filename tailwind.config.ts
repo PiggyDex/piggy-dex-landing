@@ -19,6 +19,20 @@ const config: Config = {
       },
     },
     extend: {
+      keyframes: {
+        shake: {
+          '25%': { transform: 'translateX(-7px)' },
+          '75%': { transform: 'translateX(3px)' },
+        },
+        horizontalScrollLeft: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },     
+        },
+        horizontalScrollRight: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },      
+        }
+      },
       colors: {
         border: "hsl(var(--border))",
         textLight: "hsl(var(--text-light))",
@@ -53,11 +67,15 @@ const config: Config = {
       backgroundImage: {
         "gradient-153": "linear-gradient(153deg, var(--tw-gradient-stops))",
         "gradient-132": "linear-gradient(132deg, var(--tw-gradient-stops))",
-        "gradient-45": "linear-gradient(50deg, var(--tw-gradient-stops))",
+        "gradient-45": "linear-gradient(45deg, var(--tw-gradient-stops))",
+        "gradient-3": "linear-gradient(3deg, var(--tw-gradient-stops))",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),  
+    require('tailwindcss-animated')
+  ],
 };
 
 export default config;
