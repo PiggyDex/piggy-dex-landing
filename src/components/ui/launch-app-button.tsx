@@ -6,17 +6,12 @@ import { cn } from "@/lib";
 interface Props {
   className?: string;
   textClassName?: string;
-  onClick?: () => void;
 }
 
-export const LaunchAppButton: FC<Props> = ({
-  className,
-  textClassName,
-  onClick,
-}) => {
+export const LaunchAppButton: FC<Props> = ({ className, textClassName }) => {
   return (
     <button
-      onClick={onClick}
+      onClick={() => window.open(process.env.NEXT_PUBLIC_DAPP_DOMAIN, "_blank")}
       className={cn(
         " flex h-12 items-center justify-center rounded-[10px] bg-primary px-8 py-3 hover:bg-primary/80",
         className,
