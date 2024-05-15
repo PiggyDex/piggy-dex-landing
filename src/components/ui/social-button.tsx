@@ -24,7 +24,7 @@ export const SocialButton: FC<SocialButtonProps> = ({
       href={link}
       target="_blank"
       className={cn(
-        "flex items-center justify-center w-16 h-12 px-4 py-[6px] rounded-xl bg-white/15",
+        "flex items-center justify-center w-16 h-12 px-4 py-[6px] rounded-xl bg-white/15 hover:cursor-pointer hover:bg-white/25",
         className,
       )}
       rel="noreferrer"

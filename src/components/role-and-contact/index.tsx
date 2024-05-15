@@ -33,17 +33,17 @@ export const RoleAndContact: FC = () => {
               <SocialButton
                 SocialName={Socials.Telegram}
                 iconSize={32}
-                link="https://t.me/"
+                link={process.env.NEXT_PUBLIC_TELEGRAM_URL}
               />
               <SocialButton
                 SocialName={Socials.X}
                 iconSize={32}
-                link="https://x.com/"
+                link={process.env.NEXT_PUBLIC_TWITTER_URL}
               />
               <SocialButton
                 SocialName={Socials.Discord}
                 iconSize={32}
-                link="https://discord.gg/"
+                link={process.env.NEXT_PUBLIC_DISCORD_URL}
               />
             </div>
           </div>
